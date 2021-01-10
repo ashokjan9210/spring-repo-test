@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>  
+    
+    
+    <definition name="definition" template="/WEB-INF/views/shared/template.jsp">  
+    <put-attribute name="title" value="FMR" /> 
+        <put-attribute name="header" value="/WEB-INF/views/shared/header.jsp" />        
+        <put-attribute name="body" value=""/>  
+        <put-attribute name="footer" value="/WEB-INF/views/shared/footer.jsp" />  
+    </definition> 
+      
+      
+     <!--   <definition name="loginDefination" template="/WEB-INF/views/shared/Logintemplate.jsp">  
+  		 
+        <put-attribute name="header" value="/WEB-INF/views/shared/headerLogin.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/shared/menu.jsp" />       
+        <put-attribute name="body" value=""/>  
+        <put-attribute name="footer" value="/WEB-INF/views/shared/footer.jsp" />  
+    </definition>  -->
+      
+      
+
+     <definition name="index" extends="definition">  
+        <put-attribute name="title" value="index" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/formPage.jsp" />  
+    </definition>
+    
+    <definition name="success" extends="definition">  
+        <put-attribute name="title" value="success" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/afterSubmitMainTbale.jsp" />  
+    </definition>
+    
+    
+    <!--  <definition name="repeatfillform" extends="definition">  
+        <put-attribute name="title" value="repeatfillform" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/repeatFillformView.jsp" />  
+    </definition>
+    
+      <definition name="success" extends="definition">  
+        <put-attribute name="title" value="success" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/afterSubmitMainTbale.jsp" />  
+    </definition>
+    
+    
+      <definition name="document" extends="definition">  
+        <put-attribute name="title" value="document" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/documentUpload.jsp" />  
+    </definition>
+    
+    
+    
+    <definition name="repeatSearch" extends="definition">  
+        <put-attribute name="title" value="RepeatSearch" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/repeatFillform.jsp" />  
+    </definition>
+    
+     <definition name="login" extends="definition">  
+        <put-attribute name="title" value="login" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/login.jsp" />  
+    </definition>
+    
+    
+   <definition name="viewApplicant" extends="loginDefination">  
+        <put-attribute name="title" value="viewApplicant" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/viewApplicant.jsp" />  
+    </definition>
+    
+    
+     <definition name="applicantSearch" extends="loginDefination">  
+        <put-attribute name="title" value="applicantSearch" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/applicantSearch.jsp" />  
+    </definition> 
+    
+    
+    <definition name="grantview" extends="loginDefination">  
+        <put-attribute name="title" value="grantview" />  
+        <put-attribute name="body" value="/WEB-INF/views/pagesview/GrantView.jsp" />  
+    </definition>  -->
+    
+    
+    <!-- <definition name="unauthorizationErrorLayout" template="/WEB-INF/view/fillform/unauthorizationError.jsp">
+        <put-attribute name="title" value="Sri Kartarpur Sahib" /> 
+        <put-attribute name="header" value="/WEB-INF/view/shared/header.jsp" />  
+          <put-attribute name="footer" value="/WEB-INF/view/shared/footer.jsp" />       
+    </definition>   -->
+    
+    
+</tiles-definitions> 
