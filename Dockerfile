@@ -4,6 +4,5 @@ USER spring:spring
 ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
-#COPY ${DEPENDENCY}/BOOT-INF/classes /app
 COPY target/dependency/BOOT-INF/lib /app/lib
 ENTRYPOINT ["java","-cp","app:app/lib/*","com.example.demo.DemoApplication"]
