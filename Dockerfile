@@ -6,4 +6,4 @@ USER spring:spring
 #COPY ${DEPENDENCY}/META-INF /app/META-INF
 #COPY target/dependency/BOOT-INF/lib /app/lib
 COPY  /var/lib/jenkins/workspace/git-job/target/DevToolpro-0.0.1-SNAPSHOT.jar /app/lib
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.example.demo.DemoApplication"]
+ENTRYPOINT ["java","-jar","DevToolpro-0.0.1-SNAPSHOT.jar"]
